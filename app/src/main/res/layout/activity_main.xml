@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    tools:context=".activity.MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/btn_go_to_lottie"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:tooltipText="Lottie Animation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/anim_arrow" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/btn_go_to_ShPre"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:scaleX="-1"
+        android:tooltipText="Shared Preference"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/anim_arrow" />
+
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:id="@+id/image_anim"-->
+    <!--        android:layout_width="356dp"-->
+    <!--        android:layout_height="356dp"-->
+    <!--        android:padding="36dp"-->
+    <!--        android:src="@drawable/img_profile"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/edt_anim"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/image_anim"
+        android:layout_width="356dp"
+        android:layout_height="356dp"
+        android:src="@drawable/ic_heart_love"
+        app:layout_constraintBottom_toTopOf="@+id/edt_anim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_go_to_lottie" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_anim"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:hint="Select Animation"
+        app:layout_constraintBottom_toTopOf="@+id/btn_anim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/btn_anim"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/anim_strat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
