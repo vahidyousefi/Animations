@@ -9,8 +9,10 @@ shared Preferences
 استفاده کردیم، علاوه بر این حالت رنگ سوییچ ها ،رادیو باتن ها، چک باکس و دکمه رو هم شخصی سازی کردیم.
 
 
- ![](demo/shot1.jpg) | ![](demo/shot2.jpg) |
-| ![](demo/shot.jpg) | ![](demo/shot4.jpg) 
+|  |  |
+|--|--|
+| ![enter image description here](demo/shot1.jpg) | ![enter image description here](demo/shot2.jpg) |
+| ![enter image description here](demo/shot.jpg) | ![enter image description here](demo/shot4.jpg) |
 
 # Anims List
 * Alpha
@@ -18,4 +20,3 @@ shared Preferences
 * Rotate
 * Translate
 * Multiple (optional)
-
